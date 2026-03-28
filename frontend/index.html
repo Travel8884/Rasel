@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rasel SaaS Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Rasel SaaS Console</h1>
+        <p>Production-ready starter UI for Admin and Staff.</p>
+      </header>
+
+      <section class="panel" id="auth-panel">
+        <h2>Login</h2>
+        <input id="email" placeholder="email" />
+        <input id="password" type="password" placeholder="password" />
+        <button id="login-btn">Sign In</button>
+        <pre id="auth-output"></pre>
+      </section>
+
+      <section class="panel">
+        <h2>My Profile</h2>
+        <button id="me-btn">Load /users/me</button>
+        <pre id="me-output"></pre>
+      </section>
+
+      <section class="panel admin-only">
+        <h2>System Settings (Admin)</h2>
+        <input id="company_name" placeholder="Company name" value="Acme Corp" />
+        <input id="company_logo_url" placeholder="Logo URL" value="https://example.com/logo.png" />
+        <input id="support_email" placeholder="Support email" value="support@example.com" />
+        <input id="timezone" placeholder="Timezone" value="UTC" />
+        <button id="save-settings-btn">Save Settings</button>
+        <button id="load-settings-btn">Load Settings</button>
+        <pre id="settings-output"></pre>
+      </section>
+
+      <section class="panel">
+        <h2>Activity Logs</h2>
+        <button id="logs-btn">Load Logs</button>
+        <pre id="logs-output"></pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
