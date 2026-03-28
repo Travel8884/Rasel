@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.center { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
+
+.grid { display: grid; gap: 16px; margin-bottom: 16px; }
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+form { display: grid; gap: 10px; }
+input, select, button {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+button:disabled { opacity: .45; cursor: not-allowed; }
+
+.list {
+  max-height: 280px;
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+}
+
+.row { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.error { color: #dc2626; }
+.success { color: #15803d; }
+.hint { color: #6b7280; font-size: 13px; }
