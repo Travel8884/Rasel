@@ -68,4 +68,13 @@ A full-stack, role-based Travel Agency Management platform with dashboard analyt
 - Settings (company profile, currency, dark mode)
 - Backup endpoint (`.sql` download)
 
-For API details and full installation hardening, see `docs/`.
+For API details and full installation hardening, see `docs/`
+
+## One-command Docker Run
+```bash
+docker compose up --build
+```
+- App: `http://localhost:4000`
+- MySQL exposed on: `localhost:3307`
+
+If you face local setup issues, read: `docs/TROUBLESHOOTING_BN.md`.

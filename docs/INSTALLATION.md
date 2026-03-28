@@ -42,3 +42,13 @@ Proxy `:80 -> :4000` with TLS certs.
 - Use Reports for daily/monthly export
 - Use Settings for currency/company profile
 - Download backup SQL regularly
+
+
+## 8) Docker Alternative (Recommended for quick run)
+```bash
+docker compose up --build
+```
+This starts both MySQL and app automatically with seeded data.
+
+## 9) If it still does not run
+Follow Bangla troubleshooting guide: `docs/TROUBLESHOOTING_BN.md`.
